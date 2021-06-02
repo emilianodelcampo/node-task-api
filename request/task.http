@@ -1,0 +1,28 @@
+###
+GET http://localhost:3000/api/task?page=0&size=3&title=express
+###
+GET http://localhost:3000/api/task
+###
+GET http://localhost:3000/api/task/60b4fa627b27392de095e177
+###
+GET http://localhost:3000/api/task/done
+###
+DELETE  http://localhost:3000/api/task/60b4fa627b27392de095e177
+###
+POST  http://localhost:3000/api/task
+Content-Type: application/json
+
+{
+    "titulo": "Aprender React",
+    "descripcion":  "Mern",
+    "done": true
+}
+###
+PUT   http://localhost:3000/api/task/60b4fa627b27392de095e177
+Content-Type: application/json
+
+{
+    "titulo": "Aprender express",
+    "descripcion":  "Mean",
+     "done": true
+}
